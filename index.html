@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+
+    <div class="navbar">
+      
+      <a id="logo" href="#">My Portfolio</a>
+
+   
+      <div class="menu-toggle"></div>
+    
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <div class="image-section">
+      <img src="egos.jpg" alt="Profile Picture">
+    </div>
+
+
+    <div class="text-section">
+      <h2>Hi I’m Vincent M. Egos</h2>
+      <h3>BSINT - 3RD YEAR</h3>
+      <p><em>“Keep it s1mple.”</em></p>
+    </div>
+
+
+    <div class="footer"></div>
+
+  </div>
+
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
+
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html>
